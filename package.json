@@ -1,0 +1,22 @@
+{
+  "name": "node-ws-gzip",
+  "version": "1.0.0",
+  "description": "Simple express server that sends gzipped responses through Websocket with the use of zlib.",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/tsc",
+    "start": "node ./dist/server/server.js"
+  },
+  "author": "ynotLeft",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "ws": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/ws": "^5.1.2",
+    "typescript": "^2.9.2"
+  }
+}
