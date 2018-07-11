@@ -23,8 +23,6 @@ const testObject = {
 };
 
 wss.on('connection', (ws: WebSocket) => {
-
-  // connection is up, let's add a simple event
   ws.on('message', (message: string) => {
 
     console.log('received: %s', message);
@@ -38,7 +36,6 @@ wss.on('connection', (ws: WebSocket) => {
   });
 });
 
-// start our server
 server.listen(process.env.PORT || 8999, () => {
   const address: AddressInfo = server.address() as AddressInfo;
   console.log(`Server started on port ${address.port}`);
